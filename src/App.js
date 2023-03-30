@@ -21,8 +21,11 @@ function App() {
 
   return (
     <form className="form_container">
+
       <label htmlFor="input">Enter any text or number:</label>
+
       <br />
+
       <input
         type="text"
         id="input"
@@ -32,10 +35,13 @@ function App() {
         required
       />
       <br />
-      <button type="button" onClick={checkPalindrome}>
+
+      <button onClick={checkPalindrome}>
         Check
       </button>
+
       <div className="result">{result}</div>
+      
     </form>
   );
 }
